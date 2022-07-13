@@ -6,7 +6,7 @@
   <!-- <a href="https://template.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Web Template</h1>
+<h1 align="center">Eclecticlly Website</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/eclecticlly/web-stack?color=56BEB8">
@@ -26,10 +26,6 @@
 
 <!-- Status -->
 
-<h4 align="center"> 
-	🚧  Template 🚀 Under construction...  🚧
-</h4> 
-
 <hr>
 
 <p align="center">
@@ -46,7 +42,7 @@
 
 ## :dart: About ##
 
-A starting template to work on web projects: webapps, wepsites or apis
+Eclecticlly Website based to [Eclecticlly Web-Stack](https://github.com/eclecticlly/web-stack)
 
 ## :sparkles: Features ##
 
@@ -73,13 +69,7 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com), [
 
 ## :checkered_flag: Starting ##
 
-[Use as a template](https://github.com/eclecticlly/web-stack/generate)
-Uncomment the line for you OS in Makefile
-
 ```bash
-# Clone the generate repository
-$ git clone https://github.com/[yourgithubname]/[yourepository]
-
 # Access
 $ cd [yourepository]
 
@@ -89,7 +79,7 @@ createdb [databasename]
 # Create the env file and fill in the blanks
 $ mv .env-example .env
 
-# Start in Development mode
+# Start in Development mode (Air, Tailwind and Goconvey)
 $ make dev
 
 ```
