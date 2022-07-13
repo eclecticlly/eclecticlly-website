@@ -1,4 +1,4 @@
-{{import "/components/button.jet"}}
+{{import "/views/components/button.jet"}}
 
 <div class="flex flex-col min-h-screen justify-center items-center">
     <h1 class="text-xl">{{ FiberTitle }}</h1>

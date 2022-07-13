@@ -17,7 +17,7 @@ import (
 	"github.com/gofiber/fiber/v2/middleware/filesystem"
 )
 
-//go:embed static views
+//go:embed static/* views/*
 var content embed.FS
 
 func main() {
@@ -41,7 +41,7 @@ func main() {
 
 // Setup for execution or testing
 func Setup() *fiber.App {
-	app := bootstrap.NewApplication()
+	app := bootstrap.NewApplication(content)
 
 	app.Use("/static", filesystem.New(filesystem.Config{
 		Root:       http.FS(content),

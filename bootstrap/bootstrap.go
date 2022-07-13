@@ -5,6 +5,7 @@ import (
 	"eclecticlly/web-stack/pkg/env"
 	"eclecticlly/web-stack/pkg/router"
 	"fmt"
+	"io/fs"
 	"net/http"
 
 	"github.com/gofiber/fiber/v2"
@@ -14,10 +15,10 @@ import (
 	"github.com/gofiber/template/jet"
 )
 
-func NewApplication() *fiber.App {
+func NewApplication(content fs.FS) *fiber.App {
 	env.SetupEnvFile()
 	database.SetupDatabase()
-	engine := jet.NewFileSystem(http.Dir("./views"), ".jet")
+	engine := jet.NewFileSystem(http.FS(content), ".jet")
 
 	app := fiber.New(fiber.Config{
 		ErrorHandler: func(ctx *fiber.Ctx, err error) error {

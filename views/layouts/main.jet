@@ -1,4 +1,4 @@
-{{import "../components/navbar.jet"}}
+{{import "/views/components/navbar.jet"}}
 
 <!DOCTYPE html>
 <html>
