@@ -2,6 +2,7 @@ package controllers
 
 import "github.com/gofiber/fiber/v2"
 
+// RenderHello is the basic home route
 func RenderHello(c *fiber.Ctx) error {
 
 	return c.Render("index.jet", fiber.Map{
@@ -10,6 +11,7 @@ func RenderHello(c *fiber.Ctx) error {
 
 }
 
+// Renderclicked is the test to see if htmx works
 func RenderClicked(c *fiber.Ctx) error {
 	return c.Render("htmx.jet", nil)
 }
