@@ -9,13 +9,11 @@
 <h1 align="center">Eclecticlly Website</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/eclecticlly/web-stack?color=56BEB8">
-
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/eclecticlly/web-stack?color=56BEB8">
-
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/eclecticlly/web-stack?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/eclecticlly/web-stack?color=56BEB8">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/eclecticlly/eclecticlly-website/Eclecticlly%20workflow">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/eclecticlly/eclecticlly-website?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/eclecticlly/eclecticlly-website?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/eclecticlly/eclecticlly-website?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/eclecticlly/eclecticlly-website?color=56BEB8">
 </p>
 
 <!-- Status -->
