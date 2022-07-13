@@ -24,7 +24,7 @@ func main() {
 	app := Setup()
 
 	go func() {
-		log.Fatal(app.Listen(fmt.Sprintf("%s:%s", env.GetEnv("APP_HOST", "localhost"), env.GetEnv("APP_PORT", "8000"))))
+		log.Fatal(app.Listen(fmt.Sprintf("%s:%s", env.GetEnv("APP_HOST", "localhost"), env.GetEnv("APP_PORT", "8080"))))
 	}()
 
 	c := make(chan os.Signal, 1)
@@ -50,7 +50,7 @@ func Setup() *fiber.App {
 	}))
 
 	app.Use(favicon.New(favicon.Config{
-		File: "./static/images/favicon.ico",
+		FileSystem: http.FS(content),
 	}))
 
 	return app
