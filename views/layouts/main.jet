@@ -1,15 +1,21 @@
+{{import "../components/navbar.jet"}}
+
 <!DOCTYPE html>
 <html>
 
 <head>
+  <title>Eclecticlly</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400|Roboto:400|Roboto+Mono:400&amp;subset=latin">
   <link href="/static/css/styles.css" rel="stylesheet">
-  <title>App</title>
+  <script src="/static/js/main.js"></script>
   <script src="https://unpkg.com/htmx.org@1.8.0"></script>
 </head>
 
 <body>
+  {{yield navbar()}}
   {{ embed() }}
 </body>
 

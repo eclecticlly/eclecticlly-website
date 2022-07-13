@@ -1,0 +1,5 @@
+{{block button(url="#", method="get", swap="none", class="")}}
+<button class="bg-brand-3 hover:bg-brand-1 text-white font-bold mt-4 py-2 px-4 rounded-lg {{class}}" hx-{{method}}="{{url}}" hx-swap="{{swap}}">
+    {{ . }}
+</button>
+{{end}}
