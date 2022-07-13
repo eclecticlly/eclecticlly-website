@@ -39,6 +39,7 @@ func main() {
 	fmt.Println("Fiber was successful shutdown.")
 }
 
+// Setup for execution or testing
 func Setup() *fiber.App {
 	app := bootstrap.NewApplication()
 
