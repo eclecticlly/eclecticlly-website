@@ -51,6 +51,7 @@ func Setup() *fiber.App {
 
 	app.Use(favicon.New(favicon.Config{
 		FileSystem: http.FS(content),
+		File:       "/static/images/favicon.ico",
 	}))
 
 	return app
