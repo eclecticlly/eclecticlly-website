@@ -20,5 +20,6 @@ vet: lint
 .PHONY:vet
 
 build: vet
+	tailwindcss -i ./tailwind.css -o ./static/css/styles.css
 	go build main.go
 .PHONY:build
